@@ -28,35 +28,40 @@ class Header extends Component {
 
   render() {
     return (
-      <>
+      <div>
         <Navbar dark expand="md">
           <div className="container">
             <NavbarToggler onClick={this.toggleNav} />
             <NavbarBrand className="mr-auto" href="/">
               <img
-                scr="assets/images/uthappizza.png"
+                src="assets/images/logo.png"
                 height="30"
-                width="31"
-                alt="Ristorante con Fusion"
+                width="41"
+                alt="Ristorante Con Fusion"
               />
             </NavbarBrand>
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav navbar>
                 <NavItem>
-                  <NavLink className="nav-link" to="/home"></NavLink>
-                  <span className="fa fa-home fa-lg">Home</span>
+                  <NavLink className="nav-link" to="/home">
+                    <span className="fa fa-home fa-lg"></span> Home
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="nav-link" to="/aboutus"></NavLink>
-                  <span className="fa fa-info fa-lg"> About Us</span>
+                  <NavLink className="nav-link" to="/aboutus">
+                    <span className="fa fa-info fa-lg"></span> About Us
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="nav-link" to="/menu"></NavLink>
-                  <span className="fa fa-list fa-lg"> Menu</span>
+                  <NavLink className="nav-link" to="/menu">
+                    <span className="fa fa-list fa-lg"></span> Menu
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="nav-link" to="/contactus"></NavLink>
-                  <span className="fa fa-address-card fa-lg"> Contact Us</span>
+                  <NavLink className="nav-link" to="/contactus">
+                    <span className="fa fa-address-card fa-lg"></span> Contact
+                    Us
+                  </NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
@@ -76,7 +81,7 @@ class Header extends Component {
             </div>
           </div>
         </Jumbotron>
-      </>
+      </div>
     );
   }
 }
