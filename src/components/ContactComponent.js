@@ -164,8 +164,8 @@ class Contact extends Component {
                     name="firstname"
                     placeholder="First Name"
                     value={this.state.firstname}
-                    valid={errors.firstname == ""}
-                    invalid={errors.firstname != ""}
+                    valid={errors.firstname === ""}
+                    invalid={errors.firstname !== ""}
                     onBlur={this.handleBlur("firstname")}
                     onChange={this.handleInputChange}
                   />
@@ -183,8 +183,8 @@ class Contact extends Component {
                     name="lastname"
                     placeholder="Last Name"
                     value={this.state.lastname}
-                    valid={errors.lastname == ""}
-                    invalid={errors.lastname != ""}
+                    valid={errors.lastname === ""}
+                    invalid={errors.lastname !== ""}
                     onBlur={this.handleBlur("lastname")}
                     onChange={this.handleInputChange}
                   />
